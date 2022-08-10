@@ -1,0 +1,36 @@
+{
+	"name": "hashnode-console",
+	"description": "A hashnode on your terminal",
+	"version": "0.0.1",
+	"type": "module",
+	"license": "MIT",
+	"bin": {
+		"hashnode-console": "index.js",
+		"hashsole": "index.js"
+	},
+	"author": {
+		"name": "Ammaar Aslam",
+		"email": "ammaaraslam7@gmail.com",
+		"url": "https://ammaaraslam.hashnode.dev"
+	},
+	"keywords": [
+		"hashnode-console",
+		"Ammaar Aslam"
+	],
+	"files": [
+		"index.js",
+		"lib"
+	],
+	"scripts": {
+		"format": "prettier --write \"./**/*.{js,json}\""
+	},
+	"dependencies": {
+		"chalk": "^4.1.2",
+		"cli-meow-help": "^3.1.0",
+		"cli-table3": "^0.6.2",
+		"meow": "^9.0.0"
+	},
+	"devDependencies": {
+		"prettier": "^2.7.1"
+	}
+}

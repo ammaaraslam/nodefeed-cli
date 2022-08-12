@@ -25,9 +25,13 @@
 		"format": "prettier --write \"./**/*.{js,json}\""
 	},
 	"dependencies": {
+		"boxen": "^7.0.0",
 		"chalk": "^4.1.2",
 		"cli-meow-help": "^3.1.0",
 		"cli-table3": "^0.6.2",
+		"figlet": "^1.5.2",
+		"first-run": "^3.0.0",
+		"fs": "^0.0.1-security",
 		"meow": "^9.0.0"
 	},
 	"devDependencies": {

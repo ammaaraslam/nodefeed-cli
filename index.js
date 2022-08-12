@@ -8,6 +8,6 @@ const flags = cli.flags;
 const { clear, debug } = flags;
 
 (async () => {
-	init({ clear });
+	init();
 	input.includes(`help`) && cli.showHelp(0);
 })();

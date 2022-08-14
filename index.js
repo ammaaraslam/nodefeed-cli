@@ -2,16 +2,15 @@
 
 import init from './lib/init.js';
 import cli from './lib/cli.js';
-import getCommunityArticles from './lib/utils/handlers/getCommunityArticles.js';
+import Table from 'cli-table3';
+import getArticles from './lib/utils/handlers/getCommunityArticles.js';
 
 const input = cli.input;
 const flags = cli.flags;
 const { clear, debug } = flags;
 
-const communityArticles = await getCommunityArticles();
-
 (async () => {
 	input.includes(`help`) && cli.showHelp(0);
 
-	input.includes(`articles`) && console.log(communityArticles);
+	input.includes(`articles`) && getArticles();
 })();

@@ -15,7 +15,7 @@ const { latest, featured, user, trending, community, debug } = flags;
 (async () => {
 	input.includes(`help`) && cli.showHelp(0);
 	{
-		community && input.includes(`articles`) && getLatestArticles();
+		community && input.includes(`articles`) && getCommunityArticles();
 	}
 
 	{

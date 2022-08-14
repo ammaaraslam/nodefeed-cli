@@ -14,6 +14,12 @@ const flags = cli.flags;
 const { latest, featured, user, trending, community, debug } = flags;
 
 (async () => {
+	if (
+		(latest, featured, user, trending, debug === false) &&
+		!input.includes(`articles`)
+	) {
+		init();
+	}
 	input.includes(`help`) && cli.showHelp(0);
 	{
 		community && input.includes(`articles`) && getCommunityArticles();

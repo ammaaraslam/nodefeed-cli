@@ -10,12 +10,13 @@ import getFeaturedArticles from './lib/utils/handlers/getFeaturedArticles.js';
 
 const input = cli.input;
 const flags = cli.flags;
-const { latest, featured, user, trending, debug } = flags;
+const { latest, featured, user, trending, community, debug } = flags;
 
 (async () => {
 	input.includes(`help`) && cli.showHelp(0);
-
-	const currentFlags = { latest, featured, user, trending };
+	{
+		community && input.includes(`articles`) && getLatestArticles();
+	}
 
 	{
 		latest && input.includes(`articles`) && getLatestArticles();

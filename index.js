@@ -15,7 +15,7 @@ const { latest, featured, user, trending, community, debug } = flags;
 
 (async () => {
 	if (
-		(latest, featured, user, trending, debug === false) &&
+		(latest, featured, user, trending, community, debug === false) &&
 		!input.includes(`articles`)
 	) {
 		init();

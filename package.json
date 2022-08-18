@@ -1,12 +1,13 @@
 {
-	"name": "hashnode-console",
-	"description": "A hashnode on your terminal",
-	"version": "0.0.1",
+	"name": "nodefeed",
+	"description": "See what's happening on popular blogging platforms easily from your terminal.",
+	"version": "1.0.0",
 	"type": "module",
 	"license": "MIT",
 	"bin": {
-		"hashnode-console": "index.js",
-		"hashsole": "index.js"
+		"nodefeed": "index.js",
+		"feed": "index.js",
+		"nf": "index.js"
 	},
 	"author": {
 		"name": "Ammaar Aslam",
@@ -14,8 +15,10 @@
 		"url": "https://ammaaraslam.hashnode.dev"
 	},
 	"keywords": [
-		"hashnode-console",
-		"Ammaar Aslam"
+		"Hashnode",
+		"API",
+		"NodeJS",
+		"CLI"
 	],
 	"files": [
 		"index.js",

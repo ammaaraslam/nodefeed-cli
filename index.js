@@ -11,9 +11,11 @@ import inquirer from 'inquirer';
 
 const input = cli.input;
 const flags = cli.flags;
-const { latest, featured, user, trending, community, debug } = flags;
+const { latest, featured, user, trending, community, debug, clear } = flags;
 
 (async () => {
+	{clear && console.clear()}
+
 	if (
 		(latest, featured, user, trending, community, debug === false) &&
 		!input.includes(`articles`)

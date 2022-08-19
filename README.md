@@ -70,9 +70,13 @@ cd nodefeed
 ```sh
 npm install
 ```
-4. Run the App
+4. Run the CLI in a local environment. (To view reflected changes)
 ```sh
-npm run start
+# create update of the CLI locally.
+npm link
+
+# Use the CLI as usual.
+nodefeed <command> <option>
 ```
 
 ## 👨‍💻 **Author**

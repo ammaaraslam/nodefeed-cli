@@ -6,7 +6,7 @@
 	"license": "MIT",
 	"bin": {
 		"nodefeed": "index.js",
-		"feed": "index.js",
+		"nfeed": "index.js",
 		"nf": "index.js"
 	},
 	"author": {
@@ -18,7 +18,8 @@
 		"Hashnode",
 		"API",
 		"NodeJS",
-		"CLI"
+		"CLI",
+		"Terminal"
 	],
 	"files": [
 		"index.js",
@@ -31,8 +32,6 @@
 		"boxen": "^7.0.0",
 		"chalk": "^4.1.2",
 		"cli-meow-help": "^3.1.0",
-		"cli-table3": "^0.6.2",
-		"figlet": "^1.5.2",
 		"first-run": "^3.0.0",
 		"fs": "^0.0.1-security",
 		"inquirer": "^9.1.0",

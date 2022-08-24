@@ -4,7 +4,7 @@
   </a>
 </p>
 <h1 align="center">
-  <a href="https://nodefeed.vercel.app" target="blank"><strong>nodefeed</strong></a>
+  <a href="https://npmjs.com/package/nodefeed" target="blank"><strong>nodefeed</strong></a>
 </h1>
 <p align="center">
   <strong>See what's happening on popular blogging platforms easily from your terminal.</strong>

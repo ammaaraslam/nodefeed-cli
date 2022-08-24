@@ -55,7 +55,7 @@ nodefeed articles -f
 
 ## 🤝 **Contributing**
 Please contribute using the [Github Flow](https://guides.github.com/introduction/flow). Create a branch, add commits and [open up a pull request](https://github.com/ammaaraslam/nodefeed/compare). *Make sure your PR isn't a duplicate*
-Please also read [`CONTRIBUTING.md`](https://github.com/ammaaraslam/nodefeed/blob/main/CODE_OF_CONDUCT.md) and [`CODE_OF_CONDUCT.md`](https://github.com/ammaaraslam/nodefeed/blob/main/CODE_OF_CONDUCT.md)
+Please also read [`CONTRIBUTING.md`](https://github.com/ammaaraslam/nodefeed/blob/master/CONTRIBUTING.md) and [`CODE_OF_CONDUCT.md`](https://github.com/ammaaraslam/nodefeed/blob/master/CODE_OF_CONDUCT.md)
 
 ## ⚙ **Development**
 1. Clone the Repository

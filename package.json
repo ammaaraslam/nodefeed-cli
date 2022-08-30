@@ -1,12 +1,12 @@
 {
-	"name": "nodefeed",
+	"name": "nodefeed-cli",
 	"description": "See what's happening on popular blogging platforms easily from your terminal.",
 	"version": "1.0.0",
 	"type": "module",
 	"license": "MIT",
 	"bin": {
 		"nodefeed": "index.js",
-		"nfeed": "index.js",
+		"nodefeed-cli": "index.js",
 		"nf": "index.js"
 	},
 	"author": {

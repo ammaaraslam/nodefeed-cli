@@ -34,6 +34,8 @@ jobs:
       # Commit changes
       - name: Commit package.json changes and create tag
         run: |
+          git config --global user.name "${{ secrets.GH_NAME }}"
+          git config --global user.email "${{ secrets.GH_EMAIL }}"
           git add "package.json"
           git commit -m "chore: release ${{ env.NEW_VERSION }}"
           git tag ${{ env.NEW_VERSION }}

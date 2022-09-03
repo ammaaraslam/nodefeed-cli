@@ -24,7 +24,6 @@ jobs:
       - name: Bump release version
         run: |
           npm --no-git-tag-version version patch
-
       # Commit changes
       - name: Commit package.json changes and create tag
         run: |

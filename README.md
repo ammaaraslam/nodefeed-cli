@@ -1,6 +1,6 @@
 <p align="center">
   <a href="/" target="blank">
-    <img alt="nodefeed" src="assets/nodefeed.png" width="125" />
+    <img alt="nodefeed" src="https://raw.githubusercontent.com/ammaaraslam/nodefeed-cli/fix-minor-bugs/assets/nodefeed.png" width="125" />
   </a>
 </p>
 <h1 align="center">

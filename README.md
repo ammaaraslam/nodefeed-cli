@@ -15,7 +15,7 @@
 - Filter articles by `latest`, `featured`, `trending` and `user`.
 - Data displayed in a beautiful tabular format.
 
-> **Note:-** As of the first release the CLI supports only articles from Hashnode. Future releases will include articles from Dev.to, Medium, etc
+> **Note:-** As of the first release the CLI supports only articles from Hashnode. Future releases will include articles from Dev.to, Medium, etc.
 
 ## ⬇ **Installation**
 

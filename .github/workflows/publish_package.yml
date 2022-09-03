@@ -23,9 +23,7 @@ jobs:
       # Use tag latest
       - name: Bump release version
         run: |
-          npm version patch
-        env:
-          RELEASE_TYPE: patch
+          npm --no-git-tag-version version patch
 
       # Commit changes
       - name: Commit package.json changes and create tag

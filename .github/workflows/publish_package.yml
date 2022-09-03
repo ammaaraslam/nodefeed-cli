@@ -28,11 +28,10 @@ jobs:
         run: npm --no-git-tag-version version patch
       - name: Publish package on NPM 📦
         run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPMJS_ACCESS_TOKEN }}
       - name: Git push version bump
         run: git push origin master
       - id: set-version
         name: Output version change
         run: npm pkg get version
-
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPMJS_ACCESS_TOKEN }}

@@ -24,13 +24,13 @@ jobs:
         run: |
           git config --global user.name "${{ secrets.GH_NAME }}"
           git config --global user.email "${{ secrets.GH_EMAIL }}"
-      # Bump package version
-      # Use tag latest
-      - name: Bump release version
-        run: |
-          npm --no-git-tag-version version patch
-          git add .
-          git commit -m "chore: release patch"
+      - name: Apply version bump (patch)
+        run: npm version patch
+      - name: Git push version bump
+        run: git push origin master --follow-tags --force
+      - id: set-version
+        name: Output version change
+        run: npm pkg get version
       - name: Publish package on NPM 📦
         run: npm publish
         env:

@@ -26,12 +26,12 @@ jobs:
           git config --global user.email "${{ secrets.GH_EMAIL }}"
       - name: Apply version bump (patch)
         run: npm --no-git-tag-version version patch
+      - name: Git push version bump
+        run: git push
+      - id: set-version
+        name: Output version change
+        run: npm pkg get version
       - name: Publish package on NPM 📦
         run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPMJS_ACCESS_TOKEN }}
-      - name: Git push version bump
-        run: git push origin master
-      - id: set-version
-        name: Output version change
-        run: npm pkg get version

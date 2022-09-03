@@ -26,7 +26,7 @@ jobs:
           echo "NEW_VERSION=$(npm --no-git-tag-version version $RELEASE_TYPE)" >> $GITHUB_ENV
           echo "RELEASE_TAG=latest" >> $GITHUB_ENV
         env:
-          RELEASE_TYPE: patch
+          RELEASE_TYPE: "patch"
 
       # Commit changes
       - name: Commit package.json changes and create tag

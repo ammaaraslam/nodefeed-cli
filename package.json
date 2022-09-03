@@ -1,7 +1,7 @@
 {
 	"name": "nodefeed-cli",
 	"description": "See what's happening on popular blogging platforms easily from your terminal.",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"type": "module",
 	"license": "MIT",
 	"bin": {

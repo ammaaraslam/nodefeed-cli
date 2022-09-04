@@ -28,6 +28,7 @@ jobs:
         run: npm --no-git-tag-version version patch
       - name: Git push version bump
         run: |
+          git checkout $BRANCH_NAME
           git add .
           git commit -m "release patch"
           git push $BRANCH_NAME

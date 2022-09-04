@@ -5,7 +5,7 @@ name: Publish Patch to NPM
 on:
   push:
     branches:
-      - 'master'
+      - 'patch/**'
 jobs:
   build:
     runs-on: ubuntu-latest

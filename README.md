@@ -1,6 +1,6 @@
 <p align="center">
   <a href="/" target="blank">
-    <img alt="nodefeed" src="https://raw.githubusercontent.com/ammaaraslam/nodefeed-cli/fix-minor-bugs/assets/nodefeed.png" width="125" />
+    <img alt="nodefeed" src="https://raw.githubusercontent.com/ammaaraslam/nodefeed-cli/master/assets/nodefeed.png" width="125" />
   </a>
 </p>
 <h1 align="center">
@@ -15,7 +15,7 @@
 - Filter articles by `latest`, `featured`, `trending` and `user`.
 - Data displayed in a beautiful tabular format.
 
-> **Note:-** As of the first release the CLI supports only articles from Hashnode. Future releases will include articles from Dev.to, Medium, etc..
+> **Note:-** As of the first release the CLI supports only articles from Hashnode. Future releases will include articles from Dev.to, Medium, etc.
 
 ## ⬇ **Installation**
 

@@ -3,9 +3,11 @@
 
 name: Publish Patch to NPM
 on:
-  push:
+  pull_request:
+    types:
+      - opened
     branches:
-      - patch/**
+      - 'patch/**'
 jobs:
   build:
     runs-on: ubuntu-latest

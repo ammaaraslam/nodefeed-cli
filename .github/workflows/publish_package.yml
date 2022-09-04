@@ -3,11 +3,11 @@
 
 name: Publish Patch to NPM
 on:
-  push:
-    branches:
-      - master
+  pull_request:
+    types: [ labeled ]
 jobs:
   build:
+    if: ${{ github.event.label.name == 'patch' }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -30,11 +30,10 @@ jobs:
         run: |
           git add .
           git commit -m "release patch"
-          git push
+          git push origin HEAD:$BRANCH_NAME
+        env:
+          BRANCH_NAME: ${{ github.head_ref || github.ref_name }} 
+
       - id: set-version
         name: Output version change
         run: npm pkg get version
-      - name: Publish package on NPM 📦
-        run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPMJS_ACCESS_TOKEN }}

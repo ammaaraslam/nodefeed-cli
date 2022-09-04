@@ -30,7 +30,7 @@ jobs:
         run: |
           git add .
           git commit -m "release patch"
-          git push
+          git push origin HEAD:$BRANCH_NAME
         env:
           BRANCH_NAME: ${{ github.head_ref || github.ref_name }} 
 
